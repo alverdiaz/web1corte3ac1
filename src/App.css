@@ -1,0 +1,113 @@
+.container {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .col-12 {
+    flex: 1;
+    min-width: 100%; 
+  }
+  
+  .col-md-6 {
+    flex: 1 0 45%;
+  }
+  
+
+  .formulario-registro {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario-registro input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .formulario-registro input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  .formulario-registro button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .formulario-registro button:hover {
+    background-color: #218838;
+  }
+  
+
+  .producto-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .producto-item button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .producto-item .btn-warning {
+    background-color: #ffc107;
+    color: white;
+  }
+  
+  .producto-item .btn-danger {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .producto-item .btn-warning:hover {
+    background-color: #e0a800;
+  }
+  
+  .producto-item .btn-danger:hover {
+    background-color: #c82333;
+  }
+  
+
+  @media (max-width: 768px) {
+    .col-md-6 {
+      flex: 1 0 100%;
+    }
+  
+ 
+    .formulario-registro {
+      margin-bottom: 20px; 
+    }
+  }
+  
